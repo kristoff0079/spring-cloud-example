@@ -11,7 +11,7 @@ spring:
           predicates:
             - Path=/web1/**
           filters:
-            #- StripPrefix=1
+          #- StripPrefix=1
 
 management:
   endpoints:

@@ -5,8 +5,6 @@ import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
-import java.util.logging.Filter;
-
 public class GatewayFilter implements GlobalFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
