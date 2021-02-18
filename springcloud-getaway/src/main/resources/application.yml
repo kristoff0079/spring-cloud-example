@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: web1_route
+          #uri: http://localhost:8001
+          uri: lb://web1-service
+          predicates:
+            - Path=/web1/**
+          filters:
+            #- StripPrefix=1
+
+
+#web1-service:
+#  ribbon:
+#    listOfServers: localhost:8001, localhost:8002
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
