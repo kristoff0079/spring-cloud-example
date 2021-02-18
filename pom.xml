@@ -14,6 +14,7 @@
         <module>springcloud-eureka</module>
         <module>springcloud-web1</module>
         <module>springcloud-common</module>
+        <module>springcloud-getaway-dynamic</module>
     </modules>
 
     <properties>

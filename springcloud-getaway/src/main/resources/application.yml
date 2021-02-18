@@ -13,7 +13,14 @@ spring:
           filters:
             #- StripPrefix=1
 
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
 #web1-service:
 #  ribbon:
 #    listOfServers: localhost:8001, localhost:8002
